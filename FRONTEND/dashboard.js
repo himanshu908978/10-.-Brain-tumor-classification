@@ -7,11 +7,11 @@ const firstb1 = document.querySelector(".firstb1");
 const results = document.querySelector(".results");
 
 results.addEventListener("click",()=>{
-    window.location.href = "results.html";
+    everythingcontainer1.style.display = "block";
 })
 
 firstb1.addEventListener("click",()=>{
-    window.location.href = `about.html`;
+    Everything.style.display = "flex";
 })
 
 
@@ -29,9 +29,9 @@ function uploadimginp(){
 
 
 uploadbtn.addEventListener("click",async()=>{
-    uploadbtn.innerText = "Predicting...";
     try{const input = document.querySelector("#input1").files[0];
     if(!input) return;
+    uploadbtn.innerText = "Predicting...";
 
     let formData = new FormData();
     formData.append("data",input);
@@ -48,12 +48,11 @@ uploadbtn.addEventListener("click",async()=>{
     answer.style.display = "block";
     answer1.style.display = "block";
 
-    answer.innerText = `The Label of cell present in image is ${data.pred_label}.`
-    answer1.innerText = `Model confidence score is ${data.conf}%.`
-    uploadbtn.innerText = "Upload Image"
+    answer.innerText = `The Animal present in image is ${data.pred_label}.`
+    answer1.innerText = `Model confidence score is ${data.conf.toFixed(3)}.`
+    uploadbtn.innerText = "Upload Image";
     }
     catch(error){
-        console.log(error);
         alert("Internal server error.");
         return;
     }
@@ -67,4 +66,21 @@ uploadimg.addEventListener("drop",(e)=>{
     e.preventDefault();
     input1.files = e.dataTransfer.files;
     uploadimginp();
+})
+
+
+
+const projectname = document.querySelector(".projectname");
+const Everything = document.querySelector(".Everything");
+
+projectname.addEventListener("click",()=>{
+    Everything.style.display = "none";
+});
+
+
+const projectname1 = document.querySelector(".projectname1");
+const everythingcontainer1 = document.querySelector(".everythingcontainer1");
+
+projectname1.addEventListener("click",()=>{
+    everythingcontainer1.style.display = "none";
 })
