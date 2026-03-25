@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>MNIST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class="header1">
+        <h1 class="firsth1">Project10</h1>
+        <div class="result1">
+            <button class="results">Results</button>
+            <button class="firstb1">About this project</button>
+        </div>
+    </header>
+
+    <section class="Firstsection">
+        <div class="about">
+            <p class="heading">
+                Upload image to check the tumor in image.
+            </p>
+        </div>
+        <div class="everythingcontainer">
+            <div class="btn">
+                <div class="img-view">
+
+                </div>
+                <label for="input1" class="uploadimg">
+                    <input type="file" accept="image/*" id="input1" hidden>
+                    <img src="" class="img1">
+                    <div class="uploadimgc">
+                        <i class="fa-solid fa-cloud-arrow-up cloudicon"></i>
+                        <p class="iv1">Drag and drop or click here <br>to upload image.</p>
+                        <span class="span1">Upload any image from desktop</span>
+                    </div>
+                </label>
+                <div class="answerwrapper">
+                    <div class="result">
+                        <p class="answer">
+                            The number present in image is 999.
+                        </p>
+                        <p class="answer1">
+                            Model confidence score is 999.
+                        </p>
+                    </div>
+                    <p class="uploadbtn">
+                        Upload Image
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="firstfooter">
+        <p class="footerp">THIS PROJECT IS MADE BY THE HOLY HANDS OF GOD UPRETI</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

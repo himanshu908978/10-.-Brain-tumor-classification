@@ -1,0 +1,6 @@
+MODELS/
+*.pth
+
+Other/
+
+FRONTEND/images/

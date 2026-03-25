@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Project</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="Everything">
+        <div class="everythingwrapper">
+            <p class="projectname">Project 10 :- Brain Tumor Classification — PyTorch</p>
+            <p class="aboutproject">About this project</p>
+            <div class="everyprojectdetail">
+                <p class="projectdetail">This is my Tenth project in the domain of AI/ML/DL whose AI model is made by
+                    using the Pytorch and concepts of CNN(Convulational Neural Network) and trained on Brain-tumor
+                    dataset on Kaggle.</p>
+                <!-- <p class="projectdetail1">Then i discovered Pytorch,Tensorflow and Keras,and I choosed Pytorch for my
+                    learning because I found out pytorch more flexible, easy to learn, on demand and best for my
+                    learning.</p> -->
+                <p class="projectdetail1">This Image Classification project detects whether there is an tumor or not in your given
+                    image of brain MRI.</p>
+                <!-- <p class="projectdetail1">Transformations on input image :- </p>
+                <div class="transformation">
+                    <p class="projectdetail1 transforms">transforms.Grayscale()</p>
+                    <p class="projectdetail1 transforms">transforms.Resize((28,28))</p>
+                    <p class="projectdetail1 transforms">transforms.ToTensor()</p>
+                    <p class="projectdetail1 transforms">transforms.Normalize(mean = (0.5,),std = (0.5,))</p>
+                </div> -->
+
+                <p class="projectdetail1">This trained AI model detect the labels in image and gives you a
+                    Number(label) that it could find in your given image and also give a Confidence score that
+                    represents that how much confident model really is to give you that output. </p>
+
+                <p class="labels">Labels :- </p>
+                <div class="list">
+                    <ul>
+                        <li>Tumor</li>
+                        <li>Notumor</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="projectdetail2">So if you upload a image that belongs to any of these label's category then you
+                will get a predicted class from model in this scenario normal and pneumonia label and confidence score
+                that shows the surety of predicted class.</p>
+
+            <p class="whatiwanted">Conclusion</p>
+            <div class="whatiwanteddiv">
+                <p class="whatiwanted1">I trained this model on google colab notebook's free GPU T4(it comes with a
+                    specfic duration of usage) for 10 epochs and then the minimum loss was about 0.02 something and i
+                    got 99% accuracy on testing dataset of Brain-tumor MRI classification
+                    dataset on Kaggle.</p>
+
+                <p class="labels">Test dataset metrics :- </p>
+                <div class="list">
+                    <ul>
+                        <li>1).Accuracy :- 0.998001998001998 </li>
+                        <li>2).F1 :- 0.9980000799168864 </li>
+                        <li>3).Recall :- 0.9980657640232109</li>
+                    </ul>
+                </div>
+                <!-- <p class="whatiwanted1 catch">This accuracy seems low but when i tested the model on the randomly images taken by google related to labels(Dog and cat) then i notice that model performing very well even for different images of same category.</p> -->
+                <!-- <p class="whatiwanted1 catch">Catch : </p>
+                <div class="whatiwantedinner">
+                    <p class="whatiwanted1">When i tested this model it was giving 99% accuracy that is great means
+                        it was correctly detecting 99 images number out of 100 but only images that </p>
+                    <p class="whatiwanted1">look like the images
+                        that are present in Fashion-MNIST training dataset images, but when i gave images that are not
+                        like
+                        that then it was not performing </p>
+                    <p class="what1wanted1">as i wanted then i was trying to make my own custom dataset for
+                        training but due to lack of resource i was not able to do that.</p>
+                </div> -->
+                <p class="whatiwanted1">So final conclusion is that this model can predict the labels of images that
+                    are belongs to the category of labels of Brain-tumor MRI classification
+                    dataset images and sometime it can predict on also other images but image should be of Brain-tumor MRI.</p>
+                <!-- <p class="whatiwanted1">Fun Fact :- This time even when you upload your photo this model will definetly tell you label of dog and cat,may be it is finding the dog's or cat's facial features on your face.</p> -->
+                <!-- <p class="whatiwanted1">Why don't you try this.</p> -->
+                <p class="whatiwanted1 thanks">Thanks</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="about.js"></script>
+
+</body>
+
+</html>
